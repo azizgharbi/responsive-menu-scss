@@ -46,7 +46,13 @@ a{
 }
 /* responsive */
 @media only screen and (max-width:750px) {
- .all-page{
+  .site-content , .pusher {
+    height: 100%;
+  }
+  .site-content{
+    overflow: hidden;
+  }
+ .pusher{
    @include transition-duration(0.3s);
    @include transform(translateX(0px));
  }
@@ -89,6 +95,6 @@ a{
     }
   }
   .side-bar{
-    .all-page{@include transform(translateX($width-menu));}
+    .pusher{@include transform(translateX($width-menu));}
   }
 }

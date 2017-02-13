@@ -62,7 +62,17 @@ a {
 /* responsive */
 @media only screen and (max-width: 750px) {
   /* line 49, ../style/style.scss */
-  .all-page {
+  .site-content, .pusher {
+    height: 100%;
+  }
+
+  /* line 52, ../style/style.scss */
+  .site-content {
+    overflow: hidden;
+  }
+
+  /* line 55, ../style/style.scss */
+  .pusher {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
@@ -73,12 +83,12 @@ a {
     transform: translateX(0px);
   }
 
-  /* line 53, ../style/style.scss */
+  /* line 59, ../style/style.scss */
   .menu-header {
     position: static;
   }
 
-  /* line 56, ../style/style.scss */
+  /* line 62, ../style/style.scss */
   .header-icon {
     position: relative;
     display: block;
@@ -86,7 +96,7 @@ a {
     height: 50px;
     cursor: pointer;
   }
-  /* line 62, ../style/style.scss */
+  /* line 68, ../style/style.scss */
   .header-icon:after {
     content: '';
     position: absolute;
@@ -100,7 +110,7 @@ a {
     box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
   }
 
-  /* line 74, ../style/style.scss */
+  /* line 80, ../style/style.scss */
   .menu {
     position: absolute;
     left: 0;
@@ -117,7 +127,7 @@ a {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
-  /* line 83, ../style/style.scss */
+  /* line 89, ../style/style.scss */
   .menu a {
     display: block;
     height: 40px;
@@ -126,8 +136,8 @@ a {
     border-bottom: 1px solid #E0E0E0;
   }
 
-  /* line 92, ../style/style.scss */
-  .side-bar .all-page {
+  /* line 98, ../style/style.scss */
+  .side-bar .pusher {
     -moz-transform: translateX(300px);
     -ms-transform: translateX(300px);
     -webkit-transform: translateX(300px);
