@@ -20,6 +20,7 @@
       </nav>
     </header>
     <div class="page-content">
+      <div class="hide-sidebar" id="hide-sidebar"></div>
     <div class="container">
       <h1>Lorem ipsum dolor sit amet</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel facilisis ligula,
@@ -42,6 +43,9 @@
       $( "#header-icon" ).click(function() {
             $('body').toggleClass('side-bar');
        });
+       $( "#hide-sidebar" ).click(function() {
+             $('body').removeClass('side-bar');
+        });
 
    });
     </script>
