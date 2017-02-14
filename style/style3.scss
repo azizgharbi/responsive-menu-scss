@@ -17,9 +17,13 @@ a{
 .container{
   margin: 0 20px;
   @include clearfix;
+  background-color: #fff;
 }
 .page-content{
   padding-top: 60px;
+  top: 0;
+  background-color: #fff;
+  height: 100%;
 }
 .menu-header{
   position: fixed;
@@ -81,11 +85,11 @@ a{
   .menu{
     position: absolute;
     left:0;
-    top:0;
+    top:60px;
     bottom:0;
     background-color: #1E88E5;
     width: $width-menu;
-    @include transform(translateX($width-menu * -1));
+    //@include transform(translateX($width-menu * -1));
     @include transition-duration(0.3s);
     a{
       display: block;

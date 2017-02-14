@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>responsive menu</title>
+    <link rel="stylesheet" href="css/style3.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+  </head>
+  <body>
+    <div class="site-content">
+      <header class="menu-header">
+        <a href="#" class="header-icon" id="header-icon"></a>
+        <a href="#" class="header-logo">titre du site</a>
+        <nav class="menu">
+          <a href="#">menu 1</a>
+          <a href="#">menu 2</a>
+          <a href="#">menu 3</a>
+        </nav>
+      </header>
+    <div class="pusher">
+
+    <div class="page-content">
+      <div class="hide-sidebar" id="hide-sidebar"></div>
+    <div class="container">
+      <h1>Lorem ipsum dolor sit amet</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel facilisis ligula,
+        ut aliquam eros. Duis rhoncus iaculis dolor. Nullam eget ante dapibus felis finibus tincidunt vel vitae libero.
+        Sed sagittis risus quis massa lacinia, et mollis justo malesuada. Nunc a pretium diam,
+        sit amet tincidunt sapien. Fusce ligula ex, blandit ut consectetur vitae, convallis nec diam.
+        Nam blandit, lorem a ultricies vulputate, arcu enim consectetur dui, vitae pellentesque justo augue sed lectus.
+        Aenean ultrices dolor sed pretium porttitor. In hac habitasse platea dictumst.
+        Nulla auctor nisi sit amet euismod volutpat. Donec cursus, purus ac congue euismod,
+        erat sapien bibendum odio, sed finibus enim justo eget ante. Ut vestibulum suscipit varius. Donec auctor,
+        ipsum in tincidunt aliquam, tellus diam tincidunt arcu, vel porttitor ipsum quam in metus.</p>
+    </div>
+  </div>
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+
+      $( "#header-icon" ).click(function() {
+            $('body').toggleClass('side-bar');
+       });
+       $( "#hide-sidebar" ).click(function() {
+             $('body').removeClass('side-bar');
+        });
+
+   });
+    </script>
+  </body>
+</html>

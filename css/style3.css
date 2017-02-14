@@ -1,6 +1,6 @@
 /* Variable */
 /*end */
-/* line 5, ../style/style.scss */
+/* line 5, ../style/style3.scss */
 html, body {
   font-family: Roboto;
   font-size: 16px;
@@ -10,25 +10,29 @@ html, body {
   padding: 0;
 }
 
-/* line 13, ../style/style.scss */
+/* line 13, ../style/style3.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 17, ../style/style.scss */
+/* line 17, ../style/style3.scss */
 .container {
   margin: 0 20px;
   overflow: hidden;
   *zoom: 1;
+  background-color: #fff;
 }
 
-/* line 21, ../style/style.scss */
+/* line 22, ../style/style3.scss */
 .page-content {
   padding-top: 60px;
+  top: 0;
+  background-color: #fff;
+  height: 100%;
 }
 
-/* line 24, ../style/style.scss */
+/* line 28, ../style/style3.scss */
 .menu-header {
   position: fixed;
   left: 0;
@@ -39,39 +43,39 @@ a {
   background-color: #0D47A1;
 }
 
-/* line 33, ../style/style.scss */
+/* line 37, ../style/style3.scss */
 .header-logo {
   font-weight: bold;
   padding: 0 25px;
   float: left;
 }
 
-/* line 38, ../style/style.scss */
+/* line 42, ../style/style3.scss */
 .menu {
   float: left;
 }
-/* line 40, ../style/style.scss */
+/* line 44, ../style/style3.scss */
 .menu a {
   padding: 0 25px;
 }
-/* line 43, ../style/style.scss */
+/* line 47, ../style/style3.scss */
 .menu a:hover {
   color: #E0E0E0;
 }
 
 /* responsive */
 @media only screen and (max-width: 750px) {
-  /* line 49, ../style/style.scss */
+  /* line 53, ../style/style3.scss */
   .site-content, .pusher {
     height: 100%;
   }
 
-  /* line 52, ../style/style.scss */
+  /* line 56, ../style/style3.scss */
   .site-content {
     overflow: hidden;
   }
 
-  /* line 55, ../style/style.scss */
+  /* line 59, ../style/style3.scss */
   .pusher {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
@@ -83,12 +87,12 @@ a {
     transform: translateX(0px);
   }
 
-  /* line 59, ../style/style.scss */
+  /* line 63, ../style/style3.scss */
   .menu-header {
     position: static;
   }
 
-  /* line 62, ../style/style.scss */
+  /* line 66, ../style/style3.scss */
   .header-icon {
     position: relative;
     display: block;
@@ -96,7 +100,7 @@ a {
     height: 50px;
     cursor: pointer;
   }
-  /* line 68, ../style/style.scss */
+  /* line 72, ../style/style3.scss */
   .header-icon:after {
     content: '';
     position: absolute;
@@ -114,24 +118,20 @@ a {
     transition-duration: 2s;
   }
 
-  /* line 81, ../style/style.scss */
+  /* line 85, ../style/style3.scss */
   .menu {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 60px;
     bottom: 0;
     background-color: #1E88E5;
     width: 300px;
-    -moz-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
-    -webkit-transform: translateX(-300px);
-    transform: translateX(-300px);
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
-  /* line 90, ../style/style.scss */
+  /* line 94, ../style/style3.scss */
   .menu a {
     display: block;
     height: 40px;
@@ -140,14 +140,14 @@ a {
     border-bottom: 1px solid #E0E0E0;
   }
 
-  /* line 99, ../style/style.scss */
+  /* line 103, ../style/style3.scss */
   .side-bar .pusher {
     -moz-transform: translateX(300px);
     -ms-transform: translateX(300px);
     -webkit-transform: translateX(300px);
     transform: translateX(300px);
   }
-  /* line 100, ../style/style.scss */
+  /* line 104, ../style/style3.scss */
   .side-bar .hide-sidebar {
     position: absolute;
     top: 0;
