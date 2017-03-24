@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>responsive menu</title>
-    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/style2.css" media="screen">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
   </head>
   <body>
+    <div id="bgcover">
     <div class="site-content">
     <div class="pusher">
     <header class="menu-header">
@@ -38,8 +39,22 @@
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript">
-    $( document ).ready(function() {
 
+     function BackgroundSize(){
+             height= $(window).height();
+             console.log(height);
+             $('#bgcover').css({
+               'height':height
+             });
+     }
+    $( document ).ready(function() {
+        // background resize
+        BackgroundSize();
+        //when resize
+        $(window).resize(function(){
+           BackgroundSize();
+        })
+        // Side bar
       $( "#header-icon" ).click(function() {
             $('body').toggleClass('side-bar');
        });
@@ -49,5 +64,6 @@
 
    });
     </script>
+  </div>
   </body>
 </html>

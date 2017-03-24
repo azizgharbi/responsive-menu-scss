@@ -2,6 +2,11 @@
 /* Variable */
 $width-menu:300px;
 /*end */
+#bgcover{
+  background: url('../img/bg.png') no-repeat top center fixed;
+  @include background-size(cover);
+
+}
 html ,body {
   font-family: Roboto ;
   font-size: 16px;

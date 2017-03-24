@@ -1,6 +1,15 @@
 /* Variable */
 /*end */
 /* line 5, ../style/style2.scss */
+#bgcover {
+  background: url("../img/bg.png") no-repeat top center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 10, ../style/style2.scss */
 html, body {
   font-family: Roboto;
   font-size: 16px;
@@ -10,25 +19,25 @@ html, body {
   padding: 0;
 }
 
-/* line 13, ../style/style2.scss */
+/* line 18, ../style/style2.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 17, ../style/style2.scss */
+/* line 22, ../style/style2.scss */
 .container {
   margin: 0 20px;
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 21, ../style/style2.scss */
+/* line 26, ../style/style2.scss */
 .page-content {
   padding-top: 60px;
 }
 
-/* line 24, ../style/style2.scss */
+/* line 29, ../style/style2.scss */
 .menu-header {
   position: fixed;
   left: 0;
@@ -39,39 +48,39 @@ a {
   background-color: #0D47A1;
 }
 
-/* line 33, ../style/style2.scss */
+/* line 38, ../style/style2.scss */
 .header-logo {
   font-weight: bold;
   padding: 0 25px;
   float: left;
 }
 
-/* line 38, ../style/style2.scss */
+/* line 43, ../style/style2.scss */
 .menu {
   float: left;
 }
-/* line 40, ../style/style2.scss */
+/* line 45, ../style/style2.scss */
 .menu a {
   padding: 0 25px;
 }
-/* line 43, ../style/style2.scss */
+/* line 48, ../style/style2.scss */
 .menu a:hover {
   color: #E0E0E0;
 }
 
 /* responsive */
 @media only screen and (max-width: 750px) {
-  /* line 49, ../style/style2.scss */
+  /* line 54, ../style/style2.scss */
   .site-content, .pusher {
     height: 100%;
   }
 
-  /* line 52, ../style/style2.scss */
+  /* line 57, ../style/style2.scss */
   .site-content {
     overflow: hidden;
   }
 
-  /* line 55, ../style/style2.scss */
+  /* line 60, ../style/style2.scss */
   .pusher {
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
@@ -83,12 +92,12 @@ a {
     transform: translateX(0px);
   }
 
-  /* line 59, ../style/style2.scss */
+  /* line 64, ../style/style2.scss */
   .menu-header {
     position: static;
   }
 
-  /* line 62, ../style/style2.scss */
+  /* line 67, ../style/style2.scss */
   .header-icon {
     position: relative;
     display: block;
@@ -101,7 +110,7 @@ a {
     top: 5px;
     right: 10px;
   }
-  /* line 73, ../style/style2.scss */
+  /* line 78, ../style/style2.scss */
   .header-icon:after {
     content: '';
     position: absolute;
@@ -115,7 +124,7 @@ a {
     box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
   }
 
-  /* line 85, ../style/style2.scss */
+  /* line 90, ../style/style2.scss */
   .menu {
     position: absolute;
     left: 0;
@@ -132,7 +141,7 @@ a {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
-  /* line 94, ../style/style2.scss */
+  /* line 99, ../style/style2.scss */
   .menu a {
     display: block;
     height: 40px;
@@ -141,14 +150,14 @@ a {
     border-bottom: 1px solid #E0E0E0;
   }
 
-  /* line 103, ../style/style2.scss */
+  /* line 108, ../style/style2.scss */
   .side-bar .pusher {
     -moz-transform: translateX(300px);
     -ms-transform: translateX(300px);
     -webkit-transform: translateX(300px);
     transform: translateX(300px);
   }
-  /* line 104, ../style/style2.scss */
+  /* line 109, ../style/style2.scss */
   .side-bar .hide-sidebar {
     position: absolute;
     top: 0;
